@@ -12,30 +12,30 @@
   <body>
     <h1>Buat Account baru</h1>
     <h3>Sign up Form</h3>
-    <form action="udahlogin.html">
+    <form action="udahlogin.php" method="get">
       <label for="fname"><strong>First name:</strong></label>
       <br />
-      <input type="text" id="fname" required /><br /><br />
+      <input type="text" id="fname" name="fname" required /><br /><br />
       <label for="lname"><strong>Last name:</strong></label>
       <br />
-      <input type="text" id="lname" required /><br /><br />
+      <input type="text" id="lname" name="lname" required /><br /><br />
 
       <div class="gender-container">
         <p><strong>Gender:</strong></p>
         <label for="male">
-          <input type="radio" id="male" name="Gender" required />
+          <input type="radio" id="male" name="Gender" value="Male" required />
           Male
         </label>
         <label for="female">
-          <input type="radio" id="female" name="Gender" required />
+          <input type="radio" id="female" name="Gender" value="Female" required />
           Female
         </label>
         <label for="walmart-bag">
-          <input type="radio" id="walmart-bag" name="Gender" required />
+          <input type="radio" id="walmart-bag" name="Gender" value="Walmart Bag" required />
           Walmart Bag
         </label>
         <label for="croissant">
-          <input type="radio" id="croissant" name="Gender" required />
+          <input type="radio" id="croissant" name="Gender" value="Croissant" required />
           Croissant </label
         ><br />
       </div>
@@ -54,15 +54,15 @@
       <div class="language-container">
         <p><strong>Bahasa yang dikuasai:</strong></p>
         <label for="bahasa1">
-          <input type="checkbox" id="bahasa1" name="bahasa-indo" required />
+          <input type="checkbox" id="bahasa1" name="bahasa[]" value="Indonesia" required />
           Indonesia </label
         ><br />
         <label for="bahasa2">
-          <input type="checkbox" id="bahasa2" name="bahasa-german" />
+          <input type="checkbox" id="bahasa2" name="bahasa[]" value="Germany" />
           Germany </label
         ><br />
         <label for="bahasa3">
-          <input type="checkbox" id="bahasa3" name="bahasa-china" />
+          <input type="checkbox" id="bahasa3" name="bahasa[]" value="Mandarin" />
           Mandarin </label
         ><br /><br />
       </div>
